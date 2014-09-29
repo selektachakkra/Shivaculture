@@ -1,0 +1,497 @@
+/*Shivacult website 
+Design and Development - Design Minds
+Harshavardhan Sreedhar
+Sushant Prasad*/
+
+/*Reset CSS*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{color:inherit;}
+
+/*Harsha*/
+@font-face
+{
+font-family: leagueGothic;
+src: url(../fonts/LeagueGothic-Regular.otf) /* IE9 */
+}
+
+@font-face
+{
+font-family: 'Lato', sans-serif; /* IE9 */
+
+}
+
+.hidden{display:none;}
+.shown{display:block;}
+
+
+body{
+font-family: leagueGothic, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif; background:url("../images/pattern1.png"); 1text-shadow: 1px 1px 1px rgba(50, 50, 0, 0.18);}
+
+/*header*/
+header{margin:20px;}
+header a{color:#e30505; text-decoration:none; font-size:50px; text-align:center;}
+h2{ border-bottom: 1px solid black; width: 88%; margin: 0 auto; margin-bottom: 20px; padding-bottom: 20px; font-size: 160%;}
+h1{font-size:3.250em; text-align:center; padding-bottom: 20px; border-bottom: 1px solid black; width: 93%; margin: 0 auto;}
+.sanskritText{width:80%; margin:0 auto; height:40px; background:url(../images/sanskrit-text.png) 50% 50% no-repeat; border-bottom: 1px solid; background-size: 100%;
+padding: 20px 0%;}
+
+/*Social media*/
+.social{ margin-bottom: 1%; display:inline; margin: 0 auto; width: 25%; float: left;}
+.social ul li{ display:inline; }
+.social a img{padding:0% 23px 1% 19%;}
+.media{margin: 0 auto; width: 73%; margin-top: 4.5%; }
+
+.middle{}
+
+/*Introduction*/
+.introduction{margin:20px; font-size:21px; color:#771518; text-align:center; font-family: 'Lato', sans-serif;}
+.gallery{float:right;}
+
+/*BIO MUSIC nav*/
+.navigation{color:white; font-size:48px; margin:10px 20px 20px 20px;}
+.navigation ul li{display:inline; margin:0% 8%; float:left; margin: 0 auto; width: 50%; text-align: center; padding: 15px 0px; background:url(../images/ellipse.png) 50% 50% no-repeat;}
+.navigation ul li a{text-decoration:none; color:white;}
+.navigation ul li a:hover{color:#E30505;}
+
+
+.clear{clear:both;}
+/*Navigation*/
+.secondaryNavigation li{font-size:36px; text-align: center; margin: 5px; margin: 10px 13%; background: #133463; border-radius: 7px;}
+.secondaryNavigation li a{text-decoration:none; color:white;}
+.secondaryNavigation{margin:20px;}
+
+/*Services*/
+.services{margin:5.0%;border-top:1px dotted; padding:2%; padding-top:2.5%; padding-bottom:0px; margin-bottom:0px;}
+.service{cursor:pointer;}
+#whatIDo{color: white; font-size: 270%; margin: 2.5% 0%; text-align:center;}
+.service h3{text-align:center; padding:2%; color:white; font-size: 150%; margin: 2.5% 0%;}
+.service a{text-decoration:none;}
+.service p{font-family: 'Lato', sans-serif; padding: 2%;}
+.picture{display:none; border:1px solid; width:100%;}
+.servicePicture{width:140px; height:140px; border-radius:100px; padding:0%;
+margin: 0 auto;
+margin-top: 15px;}
+.one{background:url(../images/one.png) 50%  50% no-repeat}
+.two{background:url(../images/two.png) 50%  50% no-repeat}
+.three{background:url(../images/three.png) 50%  50% no-repeat}
+.four{background:url(../images/four.png) 50%  50% no-repeat}
+
+
+.service{ border-radius:2px; margin-top:1%;background-color:#f4c450; box-shadow:5px 5px 5px 5px; box-shadow: 16px 21px 21px -28px;}
+.serviceOne p{font-family: 'Lato', sans-serif; margin-top:20px; background:#f4c450; padding:3%; border-radius:2px; line-height: 21px; font-size: 15px;}
+
+
+/*Latest News*/
+/*Section - VIBE*/
+.latestNews{margin: 20px 5.5%; border-top: 1px dotted black;}
+.latestNewsContent{width: 97%; display: inline; float: left; padding: 4% 2% 2% 2%; background: #f4c450; margin: 1% 0%; border-radius:3px; box-shadow: 16px 21px 21px -28px;}
+.latestNews h3{color: white; font-size: 150%; margin: 2.5% 0%;}
+.latestNews h4{font-size: 135%; text-shadow: 1px 1px 1px rgba(50, 50, 0, 0.08); color:white;  }
+.latestNews p{font-family: 'Lato', sans-serif; padding: 4% 0%;text-shadow:none;}
+.latestNews a {padding-top: 1%; font-size: 200%; color: white; text-align:center; text-decoration:none;}
+
+#consort{}
+.arts p iframe{background:red; border-radius:5px;}
+
+
+/*Shiva image*/
+.tellapurShiva1{ width:77%; margin:0 auto; margin-bottom: -3px;}
+.tellapurShiva{width: 90%;  margin-left: 6%;}
+
+/*footer*/
+footer{background:#e74a05; 1height:200px;}
+.contact h5{font-size:150%; padding-bottom:5px; color:white;}
+.contact P{padding: 5px 0px; font-family: 'Lato', sans-serif; font-size: 14px;}
+.contact p a{text-decoration:none;}
+.contact{margin: 0 auto; width: 40%; padding-top: 20px; font-size: 120%; text-align: center; }
+.copyleft{color:white; padding-bottom:5px; font-family: 'Lato', sans-serif; font-size: 10px;}
+.copyleft a {}
+.email{text-decoration:none; color:black;}
+
+.tweetButton{width: 22%; margin: 0 auto;}
+
+.hidden-small{display:none;}
+
+/* Main menu section for BIO, MUSIC, ART and written*/
+.mainMenuSection{color:white; font-size:48px; padding-top: 20px; margin: 20px 20px; border-top: 1px solid black;}
+.mainMenuSection h3{text-align:center; display:block; font-size:75%;}
+.mainMenuSection p{font-family: 'Lato', sans-serif; font-size: 15px; line-height: 20px; margin:10px 0px; color:black; }
+.mainMenuSection .shade{color:white;}
+.plusPlus{font-size:10px;}
+.mainMenuSection h4{font-size:60%; text-align:center;}
+.mainMenuSection h5{font-size:60%; text-align:center; margin:20px 0px;}
+.arts{margin:30px 0px;}
+.profilePic{width:100%; border-radius: 5px;}
+
+.active{color:#e30505 !important;}
+
+/* Art */
+.lightBox{width:125px; height:125px; background:#000; display: block; float: left; margin: 0.2%; overflow: hidden; }
+.lightBox img{max-height:100%;}
+.portraitlightBox img{max-height:163%;}
+
+/*Network */
+.artists{width:100%; float:left;}
+.artists h5{color:#fff; }
+.profileBackground{width:100%; height:200px; display:block; box-shadow: 16px 21px 21px -28px;}
+.intro{text-align:center !important;}
+
+.hoodub{background:url(../images/art/network/1.jpg) 50% 50% no-repeat; }
+.monkey{background:url(../images/art/network/4.jpg) 50% 50% no-repeat; }
+.mindplug{background:url(../images/art/network/7.jpg) 50% 50% no-repeat; }
+.circles{background:url(../images/art/network/6.jpg) 50% 50% no-repeat; }
+.ashesh{background:url(../images/art/network/9.jpg) 50% 50% no-repeat;}
+.musicfellas{background:url(../images/art/network/8.jpg) 50% 50% no-repeat; }
+
+/* Contact */
+.coin{display:block;}
+.contactInfo h5{margin:10px 0px;}
+.contactInfo p{text-align:center;}
+.linkTo{color:inherit;}
+
+/*About me desdc */
+.aboutMeDesc{font-size:172%; font-family: leagueGothic;  margin:40px 6% 30px 6%; color:#133463;}
+.aboutMeDesc p{ margin: 0 auto;
+background: url(../images/mainDisplay.png) no-repeat, url('../images/smoke-texture.png') no-repeat;
+padding: 5%;
+height: 360px;
+text-align: center; border-radius: 5px;}
+.aboutMeDesc1{display: block;  margin-bottom: 20px;}
+.aboutMeDesc2{display:block; line-height:45px; font-size:120%; color:black;}
+.aboutMeDesc3{display: block;  margin-top: 20px;}
+.aboutMeDesc4{color:black; }
+
+/* iframe fix*/
+.mediumBody{height: 100%;
+1position: fixed;
+width: 100%;}
+
+
+/*Medium Styling
+
+
+
+
+
+
+*/
+@media (min-width:768px)
+{
+.hidden-small{display:block;}
+.hidden-medium{display:none;}
+.hidden-large{display:none;}
+
+.wrapper{}
+
+header{background-color:#f4c450; margin:0px; border-bottom:2px solid white; 1box-shadow: -2px 0px 52px -21px;}
+header a{text-align:left;}
+header h2{border:none; margin: 3% 0% 0% 5.5%; font-size: 155%; width:33%; display: inline-block; float: left; padding-bottom: 22px; background:url(../images/sanskrit-text.png) 21px 80px no-repeat;; background-size:190px;}
+header h1{text-align: left; margin: 3.5% 3% 0% 0%; float: right; font-size: 283%; width: 56%; display: inline; padding-bottom: 14px;}
+
+.sanskritText{display:none;}
+
+/*Social Media*/
+.social, .media, .media ul{display:inline; margin-bottom: 1%; }
+.social ul li{display:inline; }
+.social ul li a img{padding:0% 7% 1% 1%;}
+.media ul{margin-left:7%;}
+.media{ display: inline; float:left; margin-left: 6.3%; width: 34.7%; margin-top: 0.5%;}
+.social{width:55px;}
+
+.secondaryNavigation1 li{border:none; display:inline; color: white; padding-right: 2.2%;}
+.secondaryNavigation1 ul{display:inline;}
+.secondaryNavigation1 ul li a{font-size:150%; color: white;}
+.secondaryNavigation1 ul li a:hover{1color:#e30505; }
+.secondaryNavigation1{display:inline; }
+
+.introduction { margin: 3.5% 5.5%; margin-bottom: 1.5%; text-align:left; float: right; width: 54%;}
+.introduction p{margin:2% 0%;}
+
+.navigation{margin-top: 2.0%;}
+.navigation ul{}
+.navigation ul li{width: 25%;
+margin: 0 auto;}
+
+/*.latestNews{border-top: 1px dotted black; padding-top: 2%; margin: 0 5.5%; font-size: 250%; color: white;}*/
+
+/* Services */
+.services{margin-top: 0px;}
+
+
+/*Section - VIBE*/
+.latestNews{margin: 2% 5.5%; }
+.latestNewsContent{width: 26%; display: inline; float: left; padding: 2% 2% 0% 2%; margin: 1.5%; border-radius: 3px; height: 214px;}
+.latestNews h3{color: white; text-align:center; margin: 1% 0%;}
+.latestNews h4{font-size: 135%;}
+.latestNews p{font-family: 'Lato', sans-serif; padding: 3% 0%; margin:2% 0%;}
+#whatIDo{margin-top:0px; font-size:300%;margin-bottom: 5px;}
+.service h3 { padding: 5%;font-size: 170%; margin: 0%;}
+.service p {padding: 5%; padding-top: 0%;}
+.service{float: left; width: 48%; margin-right: 2%; height: 300px; margin-top: 2%;}
+
+#consort{}
+
+.tellapurShiva1 {width: 92%; }
+.tellapurShiva {width: 57%; }
+
+.anotherContact{width: 21%; margin-left: 50px; float:left;}
+.contact{text-align:left;}
+.border{border-bottom:1px dotted black;}
+
+.biography{height:200px;}
+.music{height:200px;}
+.art{height:200px;}
+.written{height:200px;}
+
+/* Main menu section for BIO, MUSIC, ART and written*/
+.mainMenuSection{border-top:1px dotted black;}
+.mainMenuSection h3{font-size:84%; margin-bottom: 14px;}
+.profilePic {width: 65%; margin-left: 16%;}
+
+/* Art */
+.lightBox{width:32%; height:200px;}
+.centerGallery{}
+.classToCenter{}
+.portraitlightBox img{max-height:219%;}
+
+/* Network */
+.artists { width: 46%; float: left; margin:0% 2% 2% 0%;}
+.artists h5{margin-top:0px; margin-bottom:10px;}
+
+/* Contact */
+.coin{display:block;}
+.contactInfo h5{margin:10px 0px; text-align:left;}
+.contactInfo p{text-align:left;}
+.contactInfo div{}
+
+/* Services*/
+.servicePicture{width:140px; height:140px; border-radius:100px; padding:0%;
+float: left; margin-right: 20px; }
+.servicePic{margin:0 auto; width:640px; margin-top:20px; margin-bottom:20px;}
+.servicePicture:hover {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(90deg);
+	-webkit-transition: all 1s ease-in infinite;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+	animation-iteration-count: infinite;
+  }
+ .servicePictur{float: left;
+width: 140px;
+text-align: center;
+margin-right: 20px;
+font-size:200%;
+margin-top: 15px;
+color: black; 
+text-shadow: none;}
+.servicePictur span{font-size: 70%; margin-top: 0px;
+display: block;}
+.serviceOne p{font-family: 'Lato', sans-serif;}
+
+/* iframe fix*/
+.mediumBody{height: 100%;
+overflow: auto;
+position: fixed;
+width: 100%;}	
+
+	
+/*About me desc */
+.aboutMeDesc{font-size:220%; font-family: leagueGothic;  margin:40px 5% 30px 5%; min-width: 627px; color:#133463;}
+.aboutMeDesc p{margin: 0 auto;
+background: url(../images/mainDisplay.png) no-repeat, url('../images/smoke-texture.png') no-repeat;
+padding: 5% 0% 0% 5%;
+height: 360px;
+width: 639px;
+text-align:left; }
+.aboutMeDesc1{display: block;  margin-bottom: 20px;}
+.aboutMeDesc2{display:block; line-height:45px; width:70%; font-size:120%; color:black;}
+.aboutMeDesc3{display: block;  width:60%; margin-top: 20px;}
+.aboutMeDesc4{color:black; }
+}
+
+/*Large styles  
+
+
+
+
+
+
+*/
+@media (min-width:1025px)
+{
+/*.gallery{ float: left; width: 53%; border: 1px solid; 1height: 350px; margin: 3.5% 3% 3% 3.5%; padding-top: 130px; height: 160px; }
+.introduction{margin: 3.5% 3.5%; margin-bottom: 0%; text-align: left; float: left; width: 32%;}	
+.navigation{width: 35%; float: left;}
+.navigation ul li {width: 21%;}
+.navigation{margin: 0px 20px 20px 33px;}
+.latestNews{margin:0% 3.5%;}
+.latestNewsContent{height:225px;}
+.galleryRoundAbout li img{width:10%;}*/
+
+header {
+min-width: 260px;
+overflow-y: visible;
+width: 17%;
+max-width: 270px;
+height: 100%;
+min-height: 650px;
+z-index: 999;
+padding-top: 38px;
+text-align: center;
+position: fixed;
+left: 36px;
+top: 0;
+box-shadow: -4px 0px 97px -47px;
+}
+
+.headingBar{background:#e74a05; height:50px; display:block; position:fixed;top:0px}
+.introduction{ float:none; margin:40px 0px 30px 360px;}
+
+header h2 {width:100%; display:block; float:none;}
+header h1 {text-align:center; margin:4%; margin-top:7%; float:none; display:block; width:93%; padding-bottom: 30px; border-bottom: 1px dotted black;}
+.media{display:block; float:none; width:85%; margin:0 auto; padding-bottom:30px;}
+.secondaryNavigation1 {
+display: block;
+clear: both;
+margin-top: 50px;}
+
+.navigation ul li{width: 17%;}
+
+.secondaryNavigation1 li { display: block; padding: 3px; font-size: 150%; margin-top: 3px; 1text-transform: uppercase;}
+.secondaryNavigation1 ul li a{ display: block; text-align: center;}
+.navigation{margin: 40px 20px 20px 305px;}
+.dots{float:right; display:block}
+.insideLayer{position: fixed; top: 120px; height: 166px; right: 0px; width:20px; background:#e74a05;}
+.tellapurShiva {margin-left: 42%; width:36%;}
+#songWidget{float:right;}
+.mainMenuSection h4{font-size:60%; text-align:left;}
+
+.secondaryNavigation1 ul li:hover {background:url(../images/Arrow.png) no-repeat 90% 50%; color:#e30505;}
+.secondaryNavigation1 ul li:hover a{color:#e30505;}
+
+#whatIDo{text-align:left;}
+.latestNews h3{text-align: left; margin: 1% 1%;}
+
+.services{margin-left: 330px; padding-top: 1.5%; }
+.latestNews{margin-left: 330px;}
+
+.hoverClass{transform: scale(1.9); }
+.blur{}
+
+.popup{border: 1px solid;
+width: 350px;
+height: 350px;
+position: fixed;
+top: 200px;
+left: 400px;
+border-radius: 192px;}
+
+/* Main menu section for BIO, MUSIC, ART and written*/
+.mainMenuSection{border-top:1px dotted black; width:60%; margin-left:330px; padding-top:30px; }
+.mainMenuSection p{font-size: 15px; line-height: 20px;}
+.mainMenuSection h3{font-size:84%; margin-bottom: 23px; text-align:left;}
+.mainMenuSection h5{text-align:left;}
+.arts h4{text-align:left;}
+.profilePic {width: 65%; margin-left:0px;}
+
+/* Art */
+.lightBox{width:230px; height:200px;}
+.centerGallery{}
+.classToCenter{}
+
+/* Contact */
+.coin{display:block;}
+.contactInfo h5{margin:10px 0px;}
+.contactInfo p{text-align:left;}
+
+/* Services*/
+.servicePicture, .servicePictur{cursor:pointer;}
+.servicePic{margin-left:0%}
+.service p{font-size:130%;}
+
+::selection {
+	background: #e30505;
+	color:white;
+}
+::-moz-selection {
+	background: #fff2a8;
+}
+
+/* footer */
+footer{padding-left: 330px;}
+
+/*About me desdc */
+.aboutMeDesc{font-size:220%; font-family: leagueGothic;
+ 1height:456px; width:53%; margin:40px 0px 30px 330px; min-width: 627px; color:#133463;}
+.aboutMeDesc p{width: 87%; margin-left:3.6%; background: url(../images/mainDisplay.png) no-repeat, url('../images/smoke-texture.png') no-repeat; padding:5%; height: 360px; border-radius:5px; }
+.aboutMeDesc1{display: block;  margin-bottom: 20px;}
+.aboutMeDesc2{display:block; line-height:45px; width:70%; font-size:120%; color:black;}
+.aboutMeDesc3{display: block;  width:60%; margin-top: 20px;}
+.aboutMeDesc4{color:black; }
+
+/* iframe fix*/
+.largeBody{height: 100%;
+overflow: auto;
+position: fixed;
+width: 100%;}
+
+
+}
+
+.puff {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+}
+
